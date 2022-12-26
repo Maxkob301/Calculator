@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="319.0" prefWidth="229.0" styleClass="root" stylesheets="@Calculator.css"
+            xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.calculator.Controller">
+    <Pane layoutX="5.0" layoutY="6.0" prefHeight="311.0" prefWidth="218.0" styleClass="mainPane"
+          stylesheets="@Calculator.css">
+        <Label disable="false" layoutX="14.0" layoutY="2.0" prefHeight="28.0" prefWidth="189.0"
+               text="EJB Calculator"/>
+    </Pane>
+    <TextField fx:id="displayTextField" layoutX="11.0" layoutY="43.0" prefHeight="56.0" prefWidth="205.0"
+               styleClass="highlight"/>
+    <Button fx:id="num7Button" layoutX="24.0" layoutY="110.0" mnemonicParsing="false" onAction="#num" prefHeight="39.0"
+            prefWidth="40.0" styleClass="mainPane" text="7" textFill="#f5f5f5"/>
+    <Button fx:id="num8Button" layoutX="72.0" layoutY="110.0" mnemonicParsing="false" onAction="#num" prefHeight="39.0"
+            prefWidth="40.0" styleClass="mainPane" text="8" textFill="#fffdfd"/>
+    <Button fx:id="num9Button" layoutX="119.0" layoutY="110.0" mnemonicParsing="false" onAction="#num" prefHeight="39.0"
+            prefWidth="40.0" styleClass="mainPane" text="9" textFill="#fcfafa"/>
+    <Button fx:id="divButton" layoutX="166.0" layoutY="110.0" mnemonicParsing="false" onAction="#processOperator"
+            prefHeight="39.0" prefWidth="40.0" styleClass="mainPane" text="/" textFill="#fcfafa"/>
+    <Button fx:id="num4Button" layoutX="24.0" layoutY="161.0" mnemonicParsing="false" onAction="#num" prefHeight="39.0"
+            prefWidth="40.0" styleClass="mainPane" text="4" textFill="#fcf7f7"/>
+    <Button fx:id="num5Button" layoutX="72.0" layoutY="161.0" mnemonicParsing="false" onAction="#num" prefHeight="39.0"
+            prefWidth="40.0" styleClass="mainPane" text="5" textFill="#f8f5f5"/>
+    <Button fx:id="num6Button" layoutX="119.0" layoutY="161.0" mnemonicParsing="false" onAction="#num" prefHeight="39.0"
+            prefWidth="40.0" styleClass="mainPane" text="6" textFill="#fcf8f8"/>
+    <Button fx:id="mulButton" layoutX="166.0" layoutY="161.0" mnemonicParsing="false" onAction="#processOperator"
+            prefHeight="39.0" prefWidth="40.0" styleClass="mainPane" text="*" textFill="#fcf9f9"/>
+    <Button fx:id="num1Button" layoutX="24.0" layoutY="209.0" mnemonicParsing="false" onAction="#num" prefHeight="39.0"
+            prefWidth="40.0" styleClass="mainPane" text="1" textFill="#f5f2f2"/>
+    <Button fx:id="num2Button" layoutX="72.0" layoutY="209.0" mnemonicParsing="false" onAction="#num" prefHeight="39.0"
+            prefWidth="40.0" styleClass="mainPane" text="2" textFill="#fcf8f8"/>
+    <Button fx:id="num3Button" layoutX="119.0" layoutY="209.0" mnemonicParsing="false" onAction="#num" prefHeight="39.0"
+            prefWidth="40.0" styleClass="mainPane" text="3" textFill="#fcfafa"/>
+    <Button fx:id="subButton" layoutX="166.0" layoutY="209.0" mnemonicParsing="false" onAction="#processOperator"
+            prefHeight="39.0" prefWidth="40.0" styleClass="mainPane" text="-" textFill="#fcf9f9"/>
+    <Button fx:id="num0Button" layoutX="24.0" layoutY="259.0" mnemonicParsing="false" onAction="#num" prefHeight="39.0"
+            prefWidth="40.0" styleClass="mainPane" text="0" textFill="#f8f7f7"/>
+    <Button fx:id="clrButton" layoutX="72.0" layoutY="259.0" mnemonicParsing="false" onAction="#processOperator"
+            prefHeight="39.0" prefWidth="40.0" styleClass="mainPane" text="C" textFill="#f8f6f6"/>
+    <Button fx:id="resButton" layoutX="119.0" layoutY="259.0" mnemonicParsing="false" onAction="#processOperator"
+            prefHeight="39.0" prefWidth="40.0" styleClass="mainPane" text="=" textFill="#fcf9f9"/>
+    <Button fx:id="addButton" layoutX="166.0" layoutY="259.0" mnemonicParsing="false" onAction="#processOperator"
+            prefHeight="39.0" prefWidth="40.0" styleClass="mainPane" text="+" textFill="#f2efef"/>
+    <Text fx:id="output" fill="#fcf9f9" layoutX="33.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0"/>
+</AnchorPane>
